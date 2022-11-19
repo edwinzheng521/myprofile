@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OrderBeverageController">
+   <children>
+      <ImageView fitHeight="445.0" fitWidth="714.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Background2.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="continueButton" layoutX="600.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleContinueButton" text="Continue">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="homeButton" layoutX="640.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="53.0" prefWidth="61.0" style="-fx-background-image: url('Resources/home.PNG');">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="53.0" prefWidth="68.0" style="-fx-background-image: url('Resources/back.PNG');">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="308.0" layoutY="12.0" text="Beverages">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <ImageView fitHeight="344.0" fitWidth="180.0" layoutX="14.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Beverage.PNG" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="PepsiSmallButton" layoutX="201.0" layoutY="92.0" mnemonicParsing="false" text="12 oz. ($2)">
+         <toggleGroup>
+            <ToggleGroup fx:id="PepsiGroup" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="PepsiMediumButton" layoutX="314.0" layoutY="92.0" mnemonicParsing="false" text="20 oz. ($3)" toggleGroup="$PepsiGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="PepsiLargeButton" layoutX="427.0" layoutY="92.0" mnemonicParsing="false" text="2-liter ($6)" toggleGroup="$PepsiGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="MtnSmallButton" layoutX="201.0" layoutY="146.0" mnemonicParsing="false" text="12 oz. ($2)">
+         <toggleGroup>
+            <ToggleGroup fx:id="MtnGroup" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="MtnMediumButton" layoutX="314.0" layoutY="146.0" mnemonicParsing="false" text="20 oz. ($3)" toggleGroup="$MtnGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="MtnLargeButton" layoutX="427.0" layoutY="146.0" mnemonicParsing="false" text="2-liter ($6)" toggleGroup="$MtnGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="DietSmallButton" layoutX="201.0" layoutY="201.0" mnemonicParsing="false" text="12 oz. ($2)">
+         <toggleGroup>
+            <ToggleGroup fx:id="DietpGroup" />
+         </toggleGroup>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="DietMediumButton" layoutX="314.0" layoutY="201.0" mnemonicParsing="false" text="20 oz. ($3)" toggleGroup="$DietpGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="DietLargeButton" layoutX="427.0" layoutY="202.0" mnemonicParsing="false" text="2-liter ($6)" toggleGroup="$DietpGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="AquaSmallButton" layoutX="201.0" layoutY="261.0" mnemonicParsing="false" text="12 oz. ($2)">
+         <toggleGroup>
+            <ToggleGroup fx:id="AquafinaGroup" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="AquaMediumButton" layoutX="314.0" layoutY="261.0" mnemonicParsing="false" text="20 oz. ($3)" toggleGroup="$AquafinaGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="AquaLargeButton" layoutX="427.0" layoutY="261.0" mnemonicParsing="false" text="2-liter ($6)" toggleGroup="$AquafinaGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="SierraSmallButton" layoutX="201.0" layoutY="315.0" mnemonicParsing="false" text="12 oz. ($2)">
+         <toggleGroup>
+            <ToggleGroup fx:id="SierraGroup" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="SierraMediumButton" layoutX="314.0" layoutY="315.0" mnemonicParsing="false" text="20 oz. ($3)" toggleGroup="$SierraGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <RadioButton fx:id="SierraLargeButton" layoutX="427.0" layoutY="315.0" mnemonicParsing="false" text="2-liter ($6)" toggleGroup="$SierraGroup">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <Button fx:id="addPepsiButton" layoutX="528.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleAddPepsiButtonAction" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="addMtnButton" layoutX="528.0" layoutY="142.0" mnemonicParsing="false" onAction="#handleAddMtnButtonAction" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="addDietButton" layoutX="528.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleAddDietButtonAction" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="addAquaButton" layoutX="528.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleAddAquaButtonAction" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="addSierraButton" layoutX="528.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleAddSierraButtonAction" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextArea fx:id="taInformation" layoutX="590.0" layoutY="88.0" prefHeight="199.0" prefWidth="99.0" />
+   </children>
+</AnchorPane>

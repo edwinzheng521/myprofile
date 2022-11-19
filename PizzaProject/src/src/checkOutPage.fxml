@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CheckOutPageController">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="711.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Background2.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="297.0" layoutY="14.0" text="checkout">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelOrderButton" layoutX="31.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleCancelButton" text="Cancel Order">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="placeOrderButton" layoutX="579.0" layoutY="338.0" mnemonicParsing="false" onAction="#handlePlaceButton" text="Place Order">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="42.0" layoutY="208.0" text="Subtotal: ">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="subTotalArea" layoutX="132.0" layoutY="211.0" maxHeight="50.0" prefHeight="20.0" prefWidth="253.0">
+         <font>
+            <Font size="11.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>

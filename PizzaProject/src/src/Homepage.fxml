@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomepageController">
+   <children>
+      <ImageView fitHeight="410.0" fitWidth="709.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/background.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="202.0" layoutX="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Capture.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutButton" layoutX="607.0" layoutY="350.0" mnemonicParsing="false" onAction="#handlelogoutButton" prefHeight="28.0" prefWidth="72.0" text="LogOut">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="orderButton" layoutX="425.0" layoutY="127.0" mnemonicParsing="false" onAction="#handleorderButton" prefHeight="107.0" prefWidth="89.0" style="-fx-background-image: url('Resources/icon2.PNG');" textAlignment="CENTER" textFill="#978282" textOverrun="CLIP" AnchorPane.bottomAnchor="166.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="180.0" layoutY="127.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="96.0" style="-fx-background-image: url('Resources/icon3.PNG');">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="180.0" layoutY="259.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="96.0" style="-fx-background-image: url('Resources/icon4.PNG');">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="422.0" layoutY="259.0" mnemonicParsing="false" prefHeight="110.0" prefWidth="96.0" style="-fx-background-image: url('Resources/icon5.PNG');" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
